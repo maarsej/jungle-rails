@@ -20,6 +20,7 @@ Rails.application.routes.draw do
   post "/users" => "users#create"
 
   namespace :admin do
+    get "mailer(/:action(/:id(.:format)))" => "mailer#:action"
     root to: "dashboard#show"
     resources :products, except: [:edit, :update, :show]
     resources :categories, only: [:index, :create, :new]
