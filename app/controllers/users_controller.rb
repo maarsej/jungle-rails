@@ -24,6 +24,7 @@ class UsersController < ApplicationController
   # POST /users
   # POST /users.json
   def create
+    flash[:notice] = nil
     user = User.new(user_params)
     if user.save
       session[:user_id] = user.id
