@@ -29,9 +29,9 @@ class UsersController < ApplicationController
       session[:user_id] = user.id
       redirect_to "/"
     else
+      # format.json { render json: user.errors, status: :unprocessable_entity }
+      flash[:notice] = user.errors.full_messages.first
       redirect_to "/signup"
-      #post error from has_secure_password
-      #format.json { render json: @user.errors, status: :unprocessable_entity }
     end
   end
 
