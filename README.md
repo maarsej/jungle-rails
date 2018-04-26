@@ -20,25 +20,25 @@ Upon completing the above setup change into the directory of the project and run
 
 A brief look at the page:
 #### The Landing
-!["Screenshot of the home page"](https://github.com/maarsej/chatty/blob/master/docs/Screen%20Shot%202018-04-17%20at%202.18.18%20PM.png?raw=true)
+!["Screenshot of the home page"](https://github.com/maarsej/jungle-rails/blob/master/docs/Screen%20Shot%202018-04-26%20at%202.49.28%20PM.png?raw=true)
 
 #### The Registration
-!["Screenshot of the sign up page"](https://github.com/maarsej/chatty/blob/master/docs/Screen%20Shot%202018-04-17%20at%202.18.18%20PM.png?raw=true)
+!["Screenshot of the sign up page"](https://github.com/maarsej/jungle-rails/blob/master/docs/Screen%20Shot%202018-04-26%20at%202.48.51%20PM.png?raw=true)
 
 #### A product
-!["Screenshot of the single product view"](https://github.com/maarsej/chatty/blob/master/docs/Screen%20Shot%202018-04-17%20at%202.18.18%20PM.png?raw=true)
+!["Screenshot of the single product view"](https://github.com/maarsej/jungle-rails/blob/master/docs/Screen%20Shot%202018-04-26%20at%202.49.49%20PM.png?raw=true)
 
 #### The Cart
-!["Screenshot of the filled cart"](https://github.com/maarsej/chatty/blob/master/docs/Screen%20Shot%202018-04-17%20at%202.18.18%20PM.png?raw=true)
+!["Screenshot of the filled cart"](https://github.com/maarsej/jungle-rails/blob/master/docs/Screen%20Shot%202018-04-26%20at%202.50.27%20PM.png?raw=true)
 
 #### The Payment
-!["Screenshot of the stripe api"](https://github.com/maarsej/chatty/blob/master/docs/Screen%20Shot%202018-04-17%20at%202.18.18%20PM.png?raw=true)
+!["Screenshot of the stripe api"](https://github.com/maarsej/jungle-rails/blob/master/docs/Screen%20Shot%202018-04-26%20at%202.51.00%20PM.png?raw=true)
 
 #### The Order
-!["Screenshot of the the completed order"](https://github.com/maarsej/chatty/blob/master/docs/Screen%20Shot%202018-04-17%20at%202.18.18%20PM.png?raw=true)
+!["Screenshot of the the completed order"](https://github.com/maarsej/jungle-rails/blob/master/docs/Screen%20Shot%202018-04-26%20at%202.51.19%20PM.png?raw=true)
 
 #### The Admin Authentication
-!["Screenshot of the http auth"](https://github.com/maarsej/chatty/blob/master/docs/Screen%20Shot%202018-04-17%20at%202.18.18%20PM.png?raw=true)
+!["Screenshot of the http auth"](https://github.com/maarsej/jungle-rails/blob/master/docs/Screen%20Shot%202018-04-26%20at%202.52.19%20PM.png?raw=true)
 
 #### The Admin Example Page
-!["Screenshot of the admin categories page"](https://github.com/maarsej/chatty/blob/master/docs/Screen%20Shot%202018-04-17%20at%202.18.18%20PM.png?raw=true)
+!["Screenshot of the admin categories page"](https://github.com/maarsej/jungle-rails/blob/master/docs/Screen%20Shot%202018-04-26%20at%202.52.47%20PM.png?raw=true)
