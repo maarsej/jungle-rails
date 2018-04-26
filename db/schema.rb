@@ -57,7 +57,7 @@ ActiveRecord::Schema.define(version: 20180425155822) do
   add_index "products", ["category_id"], name: "index_products_on_category_id", using: :btree
 
   create_table "sessions", force: :cascade do |t|
-    t.string "user_id"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -21,7 +21,17 @@ class ApplicationController < ActionController::Base
   end
 
   def current_user
-    @current_user ||= User.find(session[:user_id]) if session[:user_id] || nil
+    if @current_user
+      return true
+    elsif session[:user_id] && session[:user_id] > 0
+      if User.where(id: session[:user_id]) != []
+        return true
+      else
+        return false
+      end
+    else
+      return false
+    end
   end
 
   helper_method :current_user
