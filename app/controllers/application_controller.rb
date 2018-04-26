@@ -20,11 +20,12 @@ class ApplicationController < ActionController::Base
     cookies[:cart]
   end
 
-  def current_user
+  def current_user?
     if @current_user
       return true
     elsif session[:user_id] && session[:user_id] > 0
       if User.where(id: session[:user_id]) != []
+        @current_user = User.where(id: session[:user_id])[0]
         return true
       else
         return false
@@ -34,7 +35,12 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  def current_user
+    @current_user
+  end
+
   helper_method :current_user
+  helper_method :current_user?
 
   def authorize
     redirect_to "/login" unless current_user
