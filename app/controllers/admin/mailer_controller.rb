@@ -1,4 +1,4 @@
-class Admin::MailerController < Admin::ApplicationController
+class Admin::MailerController < ApplicationController
   def preview_order_complete_email()
     @order = Order.last
     @url = "http://localhost:3000/"

@@ -37,8 +37,12 @@ A brief look at the page:
 #### The Order
 !["Screenshot of the the completed order"](https://github.com/maarsej/jungle-rails/blob/master/docs/Screen%20Shot%202018-04-26%20at%202.51.19%20PM.png?raw=true)
 
+#### The Example Order Email
+!["Screenshot of the admin categories page"](https://github.com/maarsej/jungle-rails/blob/master/docs/Screen%20Shot%202018-04-26%20at%202.52.47%20PM.png?raw=true)
+
 #### The Admin Authentication
 !["Screenshot of the http auth"](https://github.com/maarsej/jungle-rails/blob/master/docs/Screen%20Shot%202018-04-26%20at%202.52.19%20PM.png?raw=true)
 
 #### The Admin Example Page
 !["Screenshot of the admin categories page"](https://github.com/maarsej/jungle-rails/blob/master/docs/Screen%20Shot%202018-04-26%20at%202.52.47%20PM.png?raw=true)
+
