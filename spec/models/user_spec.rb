@@ -43,7 +43,7 @@ RSpec.describe User, type: :model do
     end
   end
 
-  describe ".authenticate_with_credentials" do
+  describe "Check credentials" do
     it "should be valid if proper credentials given" do
       valid_user = User.create({
         first_name: "Valid",
@@ -53,9 +53,9 @@ RSpec.describe User, type: :model do
         password_confirmation: "password",
       })
 
-      expect(valid_user.authenticate_with_credentials(valid_user.email, valid_user.password)).to eq(valid_user)
-      expect(valid_user.authenticate_with_credentials("test@email.com", valid_user.password)).to be_nil
-      expect(valid_user.authenticate_with_credentials(valid_user.email, "invalid_password")).to be_nil
+      expect(valid_user.authenticate_user(valid_user.email, valid_user.password)).to eq(valid_user)
+      expect(valid_user.authenticate_user("test@email.com", valid_user.password)).to be_nil
+      expect(valid_user.authenticate_user(valid_user.email, "invalid_password")).to be_nil
     end
   end
 
@@ -69,7 +69,7 @@ RSpec.describe User, type: :model do
         password_confirmation: "password",
       })
 
-      expect(valid_user.authenticate_with_credentials("   test@user.com   ", valid_user.password)).to eq(valid_user)
+      expect(valid_user.authenticate_user("   test@user.com   ", valid_user.password)).to eq(valid_user)
     end
 
     it "should be valid regardless of case" do
@@ -81,7 +81,7 @@ RSpec.describe User, type: :model do
         password_confirmation: "password",
       })
 
-      expect(valid_user.authenticate_with_credentials("tESt@uSeR.cOm", valid_user.password)).to eq(valid_user)
+      expect(valid_user.authenticate_user("tESt@uSeR.cOm", valid_user.password)).to eq(valid_user)
     end
 
     it "should be valid in login regardless of case in the reverse" do
@@ -93,7 +93,7 @@ RSpec.describe User, type: :model do
         password_confirmation: "password",
       })
 
-      expect(valid_user.authenticate_with_credentials("test@user.com", valid_user.password)).to eq(valid_user)
+      expect(valid_user.authenticate_user("test@user.com", valid_user.password)).to eq(valid_user)
     end
   end
 end
