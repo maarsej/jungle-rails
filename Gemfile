@@ -46,6 +46,8 @@ group :development, :test do
   gem "shoulda-matchers"
   gem "database_cleaner"
   gem "faker"
+  gem "capybara"
+  gem "poltergeist"
   gem "byebug"
   gem "quiet_assets"
   gem "dotenv-rails"
