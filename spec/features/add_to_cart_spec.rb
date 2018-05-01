@@ -19,11 +19,10 @@ RSpec.feature "ProductDetails", type: :feature, js: true do
 
     # ACT
     visit root_path
-    find("article.product header").click
+    click_link "Add"
 
     # DEBUG / VERIFY
-    find(".main-img")["complete"]
     #save_screenshot
-    expect(page).to have_css "section.products-show"
+    expect(page).to have_css "li.cart", text: "1"
   end
 end
